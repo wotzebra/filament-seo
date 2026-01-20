@@ -1,14 +1,13 @@
 <?php
 
-use Codedor\Seo\Tags\Meta;
-use Codedor\Seo\Tags\OgUrl;
-use Codedor\Seo\Tags\OpenGraph;
-use Codedor\Seo\Tags\OpenGraphImage;
+use Wotz\Seo\Tags\Meta;
+use Wotz\Seo\Tags\OgUrl;
+use Wotz\Seo\Tags\OpenGraph;
+use Wotz\Seo\Tags\OpenGraphImage;
 
-// config for Codedor/Seo
 return [
     'models' => [
-        'seo-route' => \Codedor\Seo\Models\SeoRoute::class,
+        'seo-route' => \Wotz\Seo\Models\SeoRoute::class,
     ],
     'default' => [
         'title_og' => [

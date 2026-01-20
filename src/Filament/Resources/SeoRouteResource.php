@@ -1,14 +1,7 @@
 <?php
 
-namespace Codedor\Seo\Filament\Resources;
+namespace Wotz\Seo\Filament\Resources;
 
-use Codedor\LocaleCollection\Facades\LocaleCollection;
-use Codedor\LocaleCollection\Locale;
-use Codedor\MediaLibrary\Filament\AttachmentInput;
-use Codedor\MediaLibrary\Tables\Columns\AttachmentColumn;
-use Codedor\Seo\Models\SeoRoute;
-use Codedor\TranslatableTabs\Forms\TranslatableTabs;
-use Codedor\TranslatableTabs\Tables\LocalesColumn;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -17,6 +10,13 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Route;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Locale;
+use Wotz\MediaLibrary\Filament\AttachmentInput;
+use Wotz\MediaLibrary\Tables\Columns\AttachmentColumn;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\TranslatableTabs\Forms\TranslatableTabs;
+use Wotz\TranslatableTabs\Tables\LocalesColumn;
 
 class SeoRouteResource extends Resource
 {

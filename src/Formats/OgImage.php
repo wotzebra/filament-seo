@@ -1,12 +1,12 @@
 <?php
 
-namespace Codedor\Seo\Formats;
+namespace Wotz\Seo\Formats;
 
-use Codedor\MediaLibrary\Formats\Format;
-use Codedor\MediaLibrary\Formats\Manipulations;
-use Codedor\Seo\Models\SeoRoute;
 use Spatie\Image\Drivers\ImageDriver;
 use Spatie\Image\Enums\Fit;
+use Wotz\MediaLibrary\Formats\Format;
+use Wotz\MediaLibrary\Formats\Manipulations;
+use Wotz\Seo\Models\SeoRoute;
 
 class OgImage extends Format
 {

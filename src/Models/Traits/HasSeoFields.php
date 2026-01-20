@@ -1,12 +1,12 @@
 <?php
 
-namespace Codedor\Seo\Models\Traits;
+namespace Wotz\Seo\Models\Traits;
 
-use Codedor\Seo\Facades\SeoBuilder;
-use Codedor\Seo\Models\SeoField;
-use Codedor\Seo\SeoTags;
-use Codedor\Seo\Tags\BaseTag;
 use Illuminate\Database\Eloquent\Model;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Models\SeoField;
+use Wotz\Seo\SeoTags;
+use Wotz\Seo\Tags\BaseTag;
 
 trait HasSeoFields
 {

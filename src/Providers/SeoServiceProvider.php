@@ -1,15 +1,15 @@
 <?php
 
-namespace Codedor\Seo\Providers;
+namespace Wotz\Seo\Providers;
 
-use Codedor\MediaLibrary\Facades\Formats;
-use Codedor\Seo\Console\Commands\ImportSeoRoutes;
-use Codedor\Seo\Filament\Resources\SeoRouteResource;
-use Codedor\Seo\Formats\OgImage;
-use Codedor\Seo\SeoBuilder;
 use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wotz\MediaLibrary\Facades\Formats;
+use Wotz\Seo\Console\Commands\ImportSeoRoutes;
+use Wotz\Seo\Filament\Resources\SeoRouteResource;
+use Wotz\Seo\Formats\OgImage;
+use Wotz\Seo\SeoBuilder;
 
 class SeoServiceProvider extends PackageServiceProvider
 {
@@ -41,7 +41,7 @@ class SeoServiceProvider extends PackageServiceProvider
         Formats::register(OgImage::class);
 
         Blade::directive('seo', function (string $expression) {
-            return "<?php echo \Codedor\Seo\Facades\SeoBuilder::render(); ?>";
+            return "<?php echo \Wotz\Seo\Facades\SeoBuilder::render(); ?>";
         });
     }
 }

@@ -12,7 +12,7 @@ enhance your website's SEO capabilities and drive more organic traffic to your s
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-seo
+composer require wotz/filament-seo
 ```
 
 You can publish and run the migrations with:
@@ -31,15 +31,14 @@ php artisan vendor:publish --tag="filament-seo-config"
 This is the contents of the published config file:
 
 ```php
-use Codedor\Seo\Tags\Meta;
-use Codedor\Seo\Tags\OgUrl;
-use Codedor\Seo\Tags\OpenGraph;
-use Codedor\Seo\Tags\OpenGraphImage;
+use Wotz\Seo\Tags\Meta;
+use Wotz\Seo\Tags\OgUrl;
+use Wotz\Seo\Tags\OpenGraph;
+use Wotz\Seo\Tags\OpenGraphImage;
 
-// config for Codedor/Seo
 return [
     'models' => [
-        'seo-route' => \Codedor\Seo\Models\SeoRoute::class,
+        'seo-route' => \Wotz\Seo\Models\SeoRoute::class,
     ],
     'default' => [
         'title_og' => [
@@ -85,7 +84,7 @@ return [
 
 ```php
 // Filament
-\Codedor\Seo\Filament\SeoCard::make();
+\Wotz\Seo\Filament\SeoCard::make();
 
 // Front-end
 @seo()
