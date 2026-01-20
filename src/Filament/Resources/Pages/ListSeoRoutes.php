@@ -2,8 +2,8 @@
 
 namespace Wotz\Seo\Filament\Resources\Pages;
 
-use Wotz\Seo\Filament\Resources\SeoRouteResource;
 use Filament\Resources\Pages\ListRecords;
+use Wotz\Seo\Filament\Resources\SeoRouteResource;
 
 class ListSeoRoutes extends ListRecords
 {

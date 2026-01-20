@@ -2,14 +2,14 @@
 
 namespace Wotz\Seo\Providers;
 
+use Illuminate\Support\Facades\Blade;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Wotz\MediaLibrary\Facades\Formats;
 use Wotz\Seo\Console\Commands\ImportSeoRoutes;
 use Wotz\Seo\Filament\Resources\SeoRouteResource;
 use Wotz\Seo\Formats\OgImage;
 use Wotz\Seo\SeoBuilder;
-use Illuminate\Support\Facades\Blade;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class SeoServiceProvider extends PackageServiceProvider
 {

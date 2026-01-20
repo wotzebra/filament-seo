@@ -2,16 +2,16 @@
 
 namespace Wotz\Seo;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use Wotz\Seo\Facades\SeoBuilder;
 use Wotz\Seo\Http\Middleware\SeoMiddleware;
 use Wotz\Seo\Models\SeoRoute;
 use Wotz\Seo\Tags\Meta;
 use Wotz\Seo\Tags\OpenGraph;
 use Wotz\Seo\Tags\OpenGraphImage;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Str;
 
 class SeoRoutes
 {

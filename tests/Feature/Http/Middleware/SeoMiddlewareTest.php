@@ -1,10 +1,10 @@
 <?php
 
-use Wotz\Seo\Facades\SeoBuilder;
-use Wotz\Seo\Http\Middleware\SeoMiddleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Request as HttpFoundationRequest;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Http\Middleware\SeoMiddleware;
 
 it('will not the seo routes if no route is found', function () {
     Route::get('', fn () => 'route');

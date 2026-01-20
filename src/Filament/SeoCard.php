@@ -2,13 +2,13 @@
 
 namespace Wotz\Seo\Filament;
 
+use Filament\Forms\Components\Textarea;
+use Filament\Infolists\Components\TextEntry;
+use Illuminate\Database\Eloquent\Model;
 use Wotz\MediaLibrary\Filament\AttachmentInput;
 use Wotz\Seo\Formats\OgImage;
 use Wotz\Seo\Tags\BaseTag;
 use Wotz\Seo\Tags\OpenGraphImage;
-use Filament\Forms\Components\Textarea;
-use Filament\Infolists\Components\TextEntry;
-use Illuminate\Database\Eloquent\Model;
 
 class SeoCard
 {

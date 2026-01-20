@@ -2,10 +2,10 @@
 
 namespace Wotz\Seo\Tests\Fixtures\Models;
 
+use Illuminate\Database\Eloquent\Model;
 use Wotz\Seo\Models\Traits\HasSeoFields;
 use Wotz\Seo\SeoTags;
 use Wotz\Seo\Tags\BaseTag;
-use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {

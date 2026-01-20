@@ -2,9 +2,9 @@
 
 namespace Wotz\Seo;
 
+use Illuminate\Support\Collection;
 use Wotz\Seo\Models\SeoRoute;
 use Wotz\Seo\Tags\Tag;
-use Illuminate\Support\Collection;
 
 class SeoBuilder extends Collection
 {

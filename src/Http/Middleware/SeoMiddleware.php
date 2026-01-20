@@ -3,10 +3,10 @@
 namespace Wotz\Seo\Http\Middleware;
 
 use Closure;
-use Wotz\Seo\Models\SeoRoute;
-use Wotz\Seo\SeoRoutes;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\Seo\SeoRoutes;
 
 class SeoMiddleware
 {

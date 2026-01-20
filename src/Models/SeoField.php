@@ -2,10 +2,10 @@
 
 namespace Wotz\Seo\Models;
 
-use Wotz\Seo\Models\Casts\StringOrArrayCast;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Spatie\Translatable\HasTranslations;
+use Wotz\Seo\Models\Casts\StringOrArrayCast;
 
 /**
  * @property string $model_type

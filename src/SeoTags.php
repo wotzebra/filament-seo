@@ -2,8 +2,8 @@
 
 namespace Wotz\Seo;
 
-use Wotz\Seo\Tags\BaseTag;
 use Illuminate\Support\Collection;
+use Wotz\Seo\Tags\BaseTag;
 
 class SeoTags extends Collection
 {

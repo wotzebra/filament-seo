@@ -1,12 +1,12 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use Wotz\MediaLibrary\Models\Attachment;
 use Wotz\Seo\Facades\SeoBuilder;
 use Wotz\Seo\Http\Middleware\SeoMiddleware;
 use Wotz\Seo\Models\SeoRoute;
 use Wotz\Seo\SeoRoutes;
 use Wotz\Seo\Tests\Fixtures\Models\Page;
-use Illuminate\Support\Facades\Route;
 
 beforeEach(function () {
     $this->seoRoutes = new SeoRoutes;

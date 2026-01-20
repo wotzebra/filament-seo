@@ -2,11 +2,11 @@
 
 namespace Wotz\Seo\Models\Traits;
 
+use Illuminate\Database\Eloquent\Model;
 use Wotz\Seo\Facades\SeoBuilder;
 use Wotz\Seo\Models\SeoField;
 use Wotz\Seo\SeoTags;
 use Wotz\Seo\Tags\BaseTag;
-use Illuminate\Database\Eloquent\Model;
 
 trait HasSeoFields
 {

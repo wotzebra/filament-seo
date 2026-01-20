@@ -2,9 +2,9 @@
 
 namespace Wotz\Seo\Filament;
 
-use Wotz\Seo\Filament\Resources\SeoRouteResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Wotz\Seo\Filament\Resources\SeoRouteResource;
 
 class SeoPlugin implements Plugin
 {

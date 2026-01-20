@@ -2,11 +2,11 @@
 
 namespace Wotz\Seo\Formats;
 
+use Spatie\Image\Drivers\ImageDriver;
+use Spatie\Image\Enums\Fit;
 use Wotz\MediaLibrary\Formats\Format;
 use Wotz\MediaLibrary\Formats\Manipulations;
 use Wotz\Seo\Models\SeoRoute;
-use Spatie\Image\Drivers\ImageDriver;
-use Spatie\Image\Enums\Fit;
 
 class OgImage extends Format
 {

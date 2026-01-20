@@ -2,14 +2,14 @@
 
 namespace Wotz\Seo\Tests;
 
-use Wotz\MediaLibrary\Providers\MediaLibraryServiceProvider;
-use Wotz\Seo\Providers\SeoServiceProvider;
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Wotz\MediaLibrary\Providers\MediaLibraryServiceProvider;
+use Wotz\Seo\Providers\SeoServiceProvider;
 
 class TestCase extends Orchestra
 {

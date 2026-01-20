@@ -1,7 +1,7 @@
 <?php
 
-use Wotz\Seo\Models\SeoField;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Wotz\Seo\Models\SeoField;
 
 it('has fillable fields', function () {
     $seoField = new SeoField;

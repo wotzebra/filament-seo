@@ -2,13 +2,6 @@
 
 namespace Wotz\Seo\Filament\Resources;
 
-use Wotz\LocaleCollection\Facades\LocaleCollection;
-use Wotz\LocaleCollection\Locale;
-use Wotz\MediaLibrary\Filament\AttachmentInput;
-use Wotz\MediaLibrary\Tables\Columns\AttachmentColumn;
-use Wotz\Seo\Models\SeoRoute;
-use Wotz\TranslatableTabs\Forms\TranslatableTabs;
-use Wotz\TranslatableTabs\Tables\LocalesColumn;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -17,6 +10,13 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Route;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Locale;
+use Wotz\MediaLibrary\Filament\AttachmentInput;
+use Wotz\MediaLibrary\Tables\Columns\AttachmentColumn;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\TranslatableTabs\Forms\TranslatableTabs;
+use Wotz\TranslatableTabs\Tables\LocalesColumn;
 
 class SeoRouteResource extends Resource
 {

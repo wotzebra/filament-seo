@@ -2,8 +2,8 @@
 
 namespace Wotz\Seo\Console\Commands;
 
-use Wotz\Seo\SeoRoutes;
 use Illuminate\Console\Command;
+use Wotz\Seo\SeoRoutes;
 
 class ImportSeoRoutes extends Command
 {

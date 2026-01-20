@@ -2,9 +2,9 @@
 
 namespace Wotz\Seo\Filament\Resources\Pages;
 
+use Filament\Resources\Pages\EditRecord;
 use Wotz\Seo\Filament\Resources\SeoRouteResource;
 use Wotz\TranslatableTabs\Resources\Traits\HasTranslations;
-use Filament\Resources\Pages\EditRecord;
 
 class EditSeoRoute extends EditRecord
 {

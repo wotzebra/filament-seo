@@ -1,8 +1,8 @@
 <?php
 
+use Illuminate\Support\Str;
 use Wotz\Seo\Tags\BaseTag;
 use Wotz\Seo\Tags\Tag;
-use Illuminate\Support\Str;
 
 beforeEach(function () {
     $this->page = new \Wotz\Seo\Tests\Fixtures\Models\Page;
