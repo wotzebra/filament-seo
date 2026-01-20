@@ -1,9 +1,9 @@
 <?php
 
-namespace Codedor\Seo\Filament\Traits;
+namespace Wotz\Seo\Filament\Traits;
 
-use Codedor\LocaleCollection\Facades\LocaleCollection;
-use Codedor\LocaleCollection\Locale;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Locale;
 
 trait SavesSeoFields
 {

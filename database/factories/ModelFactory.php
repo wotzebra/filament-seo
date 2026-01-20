@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Database\Factories;
+namespace Wotz\Seo\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

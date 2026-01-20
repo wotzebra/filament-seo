@@ -1,8 +1,8 @@
 <?php
 
-namespace Codedor\Seo\Models;
+namespace Wotz\Seo\Models;
 
-use Codedor\Seo\Models\Casts\StringOrArrayCast;
+use Wotz\Seo\Models\Casts\StringOrArrayCast;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Spatie\Translatable\HasTranslations;

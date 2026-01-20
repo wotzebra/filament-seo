@@ -1,7 +1,7 @@
 <?php
 
-use Codedor\Seo\Facades\SeoBuilder;
-use Codedor\Seo\Http\Middleware\SeoMiddleware;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Http\Middleware\SeoMiddleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Request as HttpFoundationRequest;
@@ -19,7 +19,7 @@ it('will build the seo routes when route matches', function () {
     $route = Route::get('test', fn () => 'route')
         ->name('test');
 
-    \Codedor\Seo\Models\SeoRoute::create([
+    \Wotz\Seo\Models\SeoRoute::create([
         'route' => 'test',
         'og_type' => 'site',
         'description' => 'test',

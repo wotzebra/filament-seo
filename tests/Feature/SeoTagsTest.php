@@ -1,8 +1,8 @@
 <?php
 
-use Codedor\Seo\SeoTags;
-use Codedor\Seo\Tags\BaseTag;
-use Codedor\Seo\Tests\Fixtures\Models\Page;
+use Wotz\Seo\SeoTags;
+use Wotz\Seo\Tags\BaseTag;
+use Wotz\Seo\Tests\Fixtures\Models\Page;
 
 beforeEach(function () {
     $this->seoTags = new SeoTags;

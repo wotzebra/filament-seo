@@ -1,9 +1,9 @@
 <?php
 
-namespace Codedor\Seo\Tests;
+namespace Wotz\Seo\Tests;
 
-use Codedor\MediaLibrary\Providers\MediaLibraryServiceProvider;
-use Codedor\Seo\Providers\SeoServiceProvider;
+use Wotz\MediaLibrary\Providers\MediaLibraryServiceProvider;
+use Wotz\Seo\Providers\SeoServiceProvider;
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
@@ -18,7 +18,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Codedor\\Seo\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Wotz\\Seo\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

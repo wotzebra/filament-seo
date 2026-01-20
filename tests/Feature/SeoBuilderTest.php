@@ -1,11 +1,11 @@
 <?php
 
-use Codedor\Seo\SeoBuilder;
-use Codedor\Seo\Tags\BaseTag;
+use Wotz\Seo\SeoBuilder;
+use Wotz\Seo\Tags\BaseTag;
 
 beforeEach(function () {
     $this->seoBuilder = new SeoBuilder;
-    $this->page = new \Codedor\Seo\Tests\Fixtures\Models\Page;
+    $this->page = new \Wotz\Seo\Tests\Fixtures\Models\Page;
 });
 
 it('can add a tag', function () {

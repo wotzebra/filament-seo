@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Tags;
+namespace Wotz\Seo\Tags;
 
 class OgUrl extends OpenGraph
 {

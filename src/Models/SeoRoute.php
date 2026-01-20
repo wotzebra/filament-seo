@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Models;
+namespace Wotz\Seo\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;

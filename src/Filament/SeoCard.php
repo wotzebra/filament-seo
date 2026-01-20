@@ -1,11 +1,11 @@
 <?php
 
-namespace Codedor\Seo\Filament;
+namespace Wotz\Seo\Filament;
 
-use Codedor\MediaLibrary\Filament\AttachmentInput;
-use Codedor\Seo\Formats\OgImage;
-use Codedor\Seo\Tags\BaseTag;
-use Codedor\Seo\Tags\OpenGraphImage;
+use Wotz\MediaLibrary\Filament\AttachmentInput;
+use Wotz\Seo\Formats\OgImage;
+use Wotz\Seo\Tags\BaseTag;
+use Wotz\Seo\Tags\OpenGraphImage;
 use Filament\Forms\Components\Textarea;
 use Filament\Infolists\Components\TextEntry;
 use Illuminate\Database\Eloquent\Model;

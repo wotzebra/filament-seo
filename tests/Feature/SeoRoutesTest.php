@@ -1,11 +1,11 @@
 <?php
 
-use Codedor\MediaLibrary\Models\Attachment;
-use Codedor\Seo\Facades\SeoBuilder;
-use Codedor\Seo\Http\Middleware\SeoMiddleware;
-use Codedor\Seo\Models\SeoRoute;
-use Codedor\Seo\SeoRoutes;
-use Codedor\Seo\Tests\Fixtures\Models\Page;
+use Wotz\MediaLibrary\Models\Attachment;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Http\Middleware\SeoMiddleware;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\Seo\SeoRoutes;
+use Wotz\Seo\Tests\Fixtures\Models\Page;
 use Illuminate\Support\Facades\Route;
 
 beforeEach(function () {

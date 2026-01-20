@@ -1,6 +1,6 @@
 <?php
 
-use Codedor\Seo\Models\SeoField;
+use Wotz\Seo\Models\SeoField;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 it('has fillable fields', function () {
