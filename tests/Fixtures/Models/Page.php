@@ -1,11 +1,11 @@
 <?php
 
-namespace Codedor\Seo\Tests\Fixtures\Models;
+namespace Wotz\Seo\Tests\Fixtures\Models;
 
-use Codedor\Seo\Models\Traits\HasSeoFields;
-use Codedor\Seo\SeoTags;
-use Codedor\Seo\Tags\BaseTag;
 use Illuminate\Database\Eloquent\Model;
+use Wotz\Seo\Models\Traits\HasSeoFields;
+use Wotz\Seo\SeoTags;
+use Wotz\Seo\Tags\BaseTag;
 
 class Page extends Model
 {

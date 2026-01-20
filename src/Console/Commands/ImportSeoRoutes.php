@@ -1,9 +1,9 @@
 <?php
 
-namespace Codedor\Seo\Console\Commands;
+namespace Wotz\Seo\Console\Commands;
 
-use Codedor\Seo\SeoRoutes;
 use Illuminate\Console\Command;
+use Wotz\Seo\SeoRoutes;
 
 class ImportSeoRoutes extends Command
 {

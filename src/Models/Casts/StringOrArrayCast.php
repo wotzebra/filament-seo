@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Models\Casts;
+namespace Wotz\Seo\Models\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Casts\Json;

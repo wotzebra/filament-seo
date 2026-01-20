@@ -1,9 +1,9 @@
 <?php
 
-use Codedor\Seo\Facades\SeoBuilder;
-use Codedor\Seo\Models\SeoField;
-use Codedor\Seo\Tags\BaseTag;
-use Codedor\Seo\Tests\Fixtures\Models\Page;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Models\SeoField;
+use Wotz\Seo\Tags\BaseTag;
+use Wotz\Seo\Tests\Fixtures\Models\Page;
 
 beforeEach(function () {
     $this->page = Page::create([

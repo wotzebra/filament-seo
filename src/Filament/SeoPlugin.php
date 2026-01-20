@@ -1,10 +1,10 @@
 <?php
 
-namespace Codedor\Seo\Filament;
+namespace Wotz\Seo\Filament;
 
-use Codedor\Seo\Filament\Resources\SeoRouteResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Wotz\Seo\Filament\Resources\SeoRouteResource;
 
 class SeoPlugin implements Plugin
 {
@@ -17,7 +17,7 @@ class SeoPlugin implements Plugin
 
     public function getId(): string
     {
-        return 'codedor/filament-seo';
+        return 'wotz/filament-seo';
     }
 
     public function register(Panel $panel): void

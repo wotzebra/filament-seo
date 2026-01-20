@@ -1,10 +1,10 @@
 <?php
 
-namespace Codedor\Seo\Filament\Resources\Pages;
+namespace Wotz\Seo\Filament\Resources\Pages;
 
-use Codedor\Seo\Filament\Resources\SeoRouteResource;
-use Codedor\TranslatableTabs\Resources\Traits\HasTranslations;
 use Filament\Resources\Pages\EditRecord;
+use Wotz\Seo\Filament\Resources\SeoRouteResource;
+use Wotz\TranslatableTabs\Resources\Traits\HasTranslations;
 
 class EditSeoRoute extends EditRecord
 {

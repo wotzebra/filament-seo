@@ -15,7 +15,7 @@ enhance your website's SEO capabilities and drive more organic traffic to your s
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-seo
+composer require wotz/filament-seo
 ```
 
 You can publish and run the migrations with:
@@ -34,15 +34,14 @@ php artisan vendor:publish --tag="filament-seo-config"
 This is the contents of the published config file:
 
 ```php
-use Codedor\Seo\Tags\Meta;
-use Codedor\Seo\Tags\OgUrl;
-use Codedor\Seo\Tags\OpenGraph;
-use Codedor\Seo\Tags\OpenGraphImage;
+use Wotz\Seo\Tags\Meta;
+use Wotz\Seo\Tags\OgUrl;
+use Wotz\Seo\Tags\OpenGraph;
+use Wotz\Seo\Tags\OpenGraphImage;
 
-// config for Codedor/Seo
 return [
     'models' => [
-        'seo-route' => \Codedor\Seo\Models\SeoRoute::class,
+        'seo-route' => \Wotz\Seo\Models\SeoRoute::class,
     ],
     'default' => [
         'title_og' => [
@@ -93,10 +92,10 @@ To add SEO tags to your model, you need to use the `HasSeoFields` trait and add 
 ```php
 public function getSeoTags(): SeoTags
 {
-    return \Codedor\Seo\SeoTags::make()
-        ->add(\Codedor\Seo\Tags\Meta::make($this, 'title', 'title')->translatable())
+    return \Wotz\Seo\SeoTags::make()
+        ->add(\Wotz\Seo\Tags\Meta::make($this, 'title', 'title')->translatable())
         ->add(
-            \Codedor\Seo\Tags\OpenGraph::make(
+            \Wotz\Seo\Tags\OpenGraph::make(
                 $this,
                 'title',
                 function (string $locale) {
@@ -104,9 +103,9 @@ public function getSeoTags(): SeoTags
                 }
             )->translatable()
         )
-        ->add(\Codedor\Seo\Tags\Meta::make($this, 'description', 'intro')->translatable())
-        ->add(\Codedor\Seo\Tags\OpenGraph::make($this, 'description', fn (string $locale) => 'og description ' . $locale)->translatable())
-        ->add(\Codedor\Seo\Tags\OpenGraphImage::make($this, 'image', fn () => $this->attachment_id));
+        ->add(\Wotz\Seo\Tags\Meta::make($this, 'description', 'intro')->translatable())
+        ->add(\Wotz\Seo\Tags\OpenGraph::make($this, 'description', fn (string $locale) => 'og description ' . $locale)->translatable())
+        ->add(\Wotz\Seo\Tags\OpenGraphImage::make($this, 'image', fn () => $this->attachment_id));
 }
 ```
 
@@ -121,7 +120,7 @@ public static function form(Form $form): Form
 {
     return $form->schema([
         // ...
-        \Codedor\Seo\Filament\SeoCard::make(static::getModel()),
+        \Wotz\Seo\Filament\SeoCard::make(static::getModel()),
         // ...
     ]);
 }
@@ -129,7 +128,7 @@ public static function form(Form $form): Form
 
 Since tags are translatable (we use [`spatie/laravel-translatable`](https://spatie.be/docs/laravel-translatable/v6/introduction) for this) you can also pass a locale to the SeoCard.
 
-E.g. if you work with our [Translatable Tabs](https://github.com/codedor/filament-translatable-tabs) package:
+E.g. if you work with our [Translatable Tabs](https://github.com/wotzebra/filament-translatable-tabs) package:
 
 ```php
 public static function form(Form $form): Form
@@ -151,17 +150,17 @@ public static function form(Form $form): Form
 }
 ```
 
-Next to that you also have to add the `\Codedor\Seo\Filament\Traits\SavesSeoFields` trait to your Create and Edit Page for this resource.
+Next to that you also have to add the `\Wotz\Seo\Filament\Traits\SavesSeoFields` trait to your Create and Edit Page for this resource.
 We need this since we have to modify the state before saving it.
 
 ### Routes
 
-To make your routes pop up in the Seo Routes module in Filament, you have to attach the `\Codedor\Seo\Http\Middleware\SeoMiddleware` middleware.
+To make your routes pop up in the Seo Routes module in Filament, you have to attach the `\Wotz\Seo\Http\Middleware\SeoMiddleware` middleware.
 
 ```php
 Route::get('/', HomeController::class)
     ->name('home')
-    ->middleware(\Codedor\Seo\Http\Middleware\SeoMiddleware::class);
+    ->middleware(\Wotz\Seo\Http\Middleware\SeoMiddleware::class);
 ```
 
 Then run the `php artisan seo:import` command to add the routes to the database.
@@ -191,10 +190,10 @@ It will first look on the model, then the routes and then the default config to 
 
 Default we have support for the following tags:
 
-- `Codedor\Seo\Tags\Meta`
-- `Codedor\Seo\Tags\OpenGraph`
-- `Codedor\Seo\Tags\OpenGraphImage`
-- `Codedor\Seo\Tags\OgUrl`
+- `Wotz\Seo\Tags\Meta`
+- `Wotz\Seo\Tags\OpenGraph`
+- `Wotz\Seo\Tags\OpenGraphImage`
+- `Wotz\Seo\Tags\OgUrl`
 
 These all extend the BaseTag class and implement the Tag interface.
 
@@ -203,7 +202,7 @@ So to add your own tag, just create a class that extends the BaseTag class and i
 ```php
 <?php
 
-namespace Codedor\Seo\Tags;
+namespace Wotz\Seo\Tags;
 
 class CustomImplementation extends BaseTag
 {

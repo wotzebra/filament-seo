@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Tags;
+namespace Wotz\Seo\Tags;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
@@ -55,7 +55,7 @@ class BaseTag implements Tag
 
     public function getKey(): string
     {
-        return $this->key ?? '';
+        return $this->key;
     }
 
     public function getModel(): Model

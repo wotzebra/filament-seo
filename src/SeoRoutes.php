@@ -1,17 +1,17 @@
 <?php
 
-namespace Codedor\Seo;
+namespace Wotz\Seo;
 
-use Codedor\Seo\Facades\SeoBuilder;
-use Codedor\Seo\Http\Middleware\SeoMiddleware;
-use Codedor\Seo\Models\SeoRoute;
-use Codedor\Seo\Tags\Meta;
-use Codedor\Seo\Tags\OpenGraph;
-use Codedor\Seo\Tags\OpenGraphImage;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Wotz\Seo\Facades\SeoBuilder;
+use Wotz\Seo\Http\Middleware\SeoMiddleware;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\Seo\Tags\Meta;
+use Wotz\Seo\Tags\OpenGraph;
+use Wotz\Seo\Tags\OpenGraphImage;
 
 class SeoRoutes
 {

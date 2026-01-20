@@ -1,9 +1,9 @@
 <?php
 
-namespace Codedor\Seo;
+namespace Wotz\Seo;
 
-use Codedor\Seo\Tags\BaseTag;
 use Illuminate\Support\Collection;
+use Wotz\Seo\Tags\BaseTag;
 
 class SeoTags extends Collection
 {

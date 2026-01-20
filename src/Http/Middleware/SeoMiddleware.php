@@ -1,12 +1,12 @@
 <?php
 
-namespace Codedor\Seo\Http\Middleware;
+namespace Wotz\Seo\Http\Middleware;
 
 use Closure;
-use Codedor\Seo\Models\SeoRoute;
-use Codedor\Seo\SeoRoutes;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\Seo\SeoRoutes;
 
 class SeoMiddleware
 {

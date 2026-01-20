@@ -1,10 +1,10 @@
 <?php
 
-namespace Codedor\Seo;
+namespace Wotz\Seo;
 
-use Codedor\Seo\Models\SeoRoute;
-use Codedor\Seo\Tags\Tag;
 use Illuminate\Support\Collection;
+use Wotz\Seo\Models\SeoRoute;
+use Wotz\Seo\Tags\Tag;
 
 class SeoBuilder extends Collection
 {

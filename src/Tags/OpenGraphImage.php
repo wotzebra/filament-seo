@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\Seo\Tags;
+namespace Wotz\Seo\Tags;
 
 class OpenGraphImage extends OpenGraph
 {
@@ -16,7 +16,7 @@ class OpenGraphImage extends OpenGraph
             return $content;
         }
 
-        $attachment = \Codedor\MediaLibrary\Models\Attachment::find($this->content);
+        $attachment = \Wotz\MediaLibrary\Models\Attachment::find($this->content);
 
         if (! $attachment) {
             return '';
