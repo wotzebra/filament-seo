@@ -2,7 +2,7 @@
 
 namespace Wotz\Seo\Tags;
 
-use Wotz\MediaLibrary\Models\Attachment;
+use Wotz\MediaLibrary\Support\Config;
 
 class OpenGraphImage extends OpenGraph
 {
@@ -18,7 +18,7 @@ class OpenGraphImage extends OpenGraph
             return $content;
         }
 
-        $attachment = Attachment::find($this->content);
+        $attachment = Config::attachmentModel()::find($this->content);
 
         if (! $attachment) {
             return '';
