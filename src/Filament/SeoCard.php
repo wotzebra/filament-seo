@@ -3,7 +3,6 @@
 namespace Wotz\Seo\Filament;
 
 use Filament\Forms\Components\Textarea;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Group;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
@@ -33,15 +32,14 @@ class SeoCard
                     ->rules($tag->getRules());
             });
 
-        return Section::make()
+        // A real Section heading, rather than a `label('Seo')` on the section *and* a
+        // TextEntry faking a heading with `text-2xl font-bold` inside it — which rendered
+        // the word "Seo" twice, in two different type styles, neither of them the
+        // design system's section heading.
+        return Section::make('SEO')
             ->columns(1)
-            ->label('Seo')
             ->schema([
                 Group::make([
-                    TextEntry::make('Seo')
-                        ->hiddenLabel()
-                        ->state('Seo')
-                        ->extraAttributes(['class' => 'text-2xl font-bold']),
                     ...$fields->toArray(),
                 ])
                     ->afterStateHydrated(function (Group $component, ?Model $record) use ($locale): void {
