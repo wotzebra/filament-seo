@@ -28,7 +28,9 @@ class SeoRoutes
                     return false;
                 }
 
-                $middleware = $route->action['middleware'];
+                // A route group can set its middleware as a single string,
+                // e.g. Horizon's routes use the 'horizon' middleware group
+                $middleware = (array) $route->action['middleware'];
 
                 return in_array('seo', $middleware)
                     || in_array(SeoMiddleware::class, $middleware);
@@ -40,7 +42,7 @@ class SeoRoutes
                     $routeName = Str::after($routeName, $route->wheres['translatable_prefix'] . '.');
                 }
 
-                $routeMiddleware = $route->action['middleware'] ?? [];
+                $routeMiddleware = (array) ($route->action['middleware'] ?? []);
 
                 return [
                     'as' => $routeName,

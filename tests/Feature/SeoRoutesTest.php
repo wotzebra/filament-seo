@@ -45,6 +45,24 @@ it('can list the seo routes and excludes routes without middleware', function ()
         ->toHaveCount(1);
 });
 
+it('can list the seo routes when a route group sets its middleware as a string', function () {
+    Route::group(['middleware' => 'web'], function () {
+        Route::get('web', fn () => 'web')->name('web');
+    });
+
+    Route::group(['middleware' => SeoMiddleware::class], function () {
+        Route::get('test', fn () => 'test')->name('test');
+    });
+
+    expect(SeoRoutes::list())
+        ->toHaveCount(1)
+        ->sequence(
+            fn ($route) => $route
+                ->as->toBe('test')
+                ->middleware->toBe([SeoMiddleware::class])
+        );
+});
+
 it('can list the seo routes and excludes routes without name', function () {
     Route::get('test', fn () => 'test')
         ->name('test')
